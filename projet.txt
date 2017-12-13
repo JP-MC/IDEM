@@ -1,1 +1,21 @@
 ceci est un fichier de test
+
+//Aide
+git help "nom de commande"
+
+//initialiser git
+git init
+
+//configurer des identifiant
+git config user.name "jpmc"
+git config user.email "jpmc@jpmc.net"
+
+//ajouter des fichiers au prochain commit (création de version)
+git add .
+git add *.html
+
+//Créer une version
+git commit -m "Mon message"
+
+//voir la liste des versions
+git log
