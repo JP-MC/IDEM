@@ -10,17 +10,51 @@ git init
 git config user.name "jpmc"
 git config user.email "jpmc@jpmc.net"
 
-//ajouter des fichiers au prochain commit (création de version)
+//ajouter des fichiers au prochain commit
 git add .
 git add *.html
+
+//retirer des fichiers du commit (reset peut supprimet des commits et autre trucs, voir les options de reset)
+git reset path
 
 //Créer une version
 git commit -m "Mon message"
 
 //voir la liste des versions
 git log
+git log --oneline
+
+//Retourner à un commit précédent
+git checkout clé_du_commit
+git checkout clé_du_commit nom_du_fichier
+
+//Revenir au dernier commit
+git checkout master
+
+//défaire un commit
+git revert clé_du_commit
+
+//fusionner des branches
+git merge branch_name (se mettre sur la branche principale et merge la branche ciblée)
+
+//récupérer un projet github (fork)
+git clone url
+
+//envoyer le commit sur github ou bitbucket
+git push origin master
+
+//récupérer le commit sur github ou bitbucket
+git pull origin master
+
+********** conflit **********
+
+
+//branches
+git branch branch_name (créer une branche)
+git checkout branch_name (rejoindre une branche)
 
 //Soft de versionning
 Git (soft local)
 Github (service en ligne)
 Sourcetree
+Ungit (paquet npm)
